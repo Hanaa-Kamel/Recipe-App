@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes App</title>
+
+    <!--custome css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mobile-container">
+      <!----Header------>
+
+      <header>
+        <input type="text" id="search-term"/>
+        <button id="search"><i class="fas fa-search"></i></button>
+      </header>
+
+      <!----Favorite Meal------>
+
+      <div class="fav-container">
+        <h3>Favorite Meal</h3>
+        <ul class="fav-meals" id="fav-meals">
+         
+         
+        </ul>
+      </div>
+
+      <!-----Meals----->
+      <div class="meals" id="meals">
+     
+      </div>
+    </div>
+
+      <!-----ingredients----->
+      <div class="popup-container hidden" id="meal-popup">
+        <div id="popup" class="popup">
+          <button id="close-popup" class="close-popup"><i class="fas fa-times"></i></button>
+          <div class="meal-info" id="meal-info">
+           
+          </div> 
+          
+         
+        </div>
+      </div>
+
+
+
+    <!--javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
